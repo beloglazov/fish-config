@@ -2,7 +2,7 @@
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-set fish_theme robbyrussell
+set fish_theme beloglazov
 
 # Plugins
 set fish_plugins vi-mode
