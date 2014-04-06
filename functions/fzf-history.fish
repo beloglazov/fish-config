@@ -1,3 +1,3 @@
 function fzf-history
-    history | fzf > /tmp/fzf; and eval (cat /tmp/fzf)
+    history | fzf > /tmp/fzf; and commandline (cat /tmp/fzf)
 end
