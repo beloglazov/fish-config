@@ -1,21 +1,30 @@
-# Path to your oh-my-fish.
+# Path to oh-my-fish
 set fish_path $HOME/.oh-my-fish
 
 # Theme
 set fish_theme robbyrussell
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
-# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-# Example format: set fish_plugins autojump bundler
-# set fish_plugins autojump bundler
+# Plugins
+set fish_plugins vi-mode
 
-# Path to your custom folder (default path is $FISH/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
+# Vi-mode key bindings
+function vi_mode_user -a mode
 
-# Load oh-my-fish configuration.
+    # Common bindings
+    bind \ck up-or-search
+    bind \ch backward-char
+    bind \cl forward-char
+
+    # Mode-specific bindings
+    switch $mode
+        case normal
+            bind h beginning-of-line
+            bind l end-of-line
+        case insert
+            bind \cq vi_mode_normal
+            # bind \cj down-or-search
+    end
+end
+
+# Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
-
-# Enable fasd
-# eval "$(fasd --init auto)"
-
-# export EDITOR="vim"
