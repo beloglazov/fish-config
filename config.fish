@@ -28,3 +28,5 @@ end
 
 # Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
+
+set PATH $PATH ~/.fzf
