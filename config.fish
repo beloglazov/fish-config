@@ -15,6 +15,12 @@ function vi_mode_user -a mode
     bind \ch backward-char
     bind \cl forward-char
 
+    bind \cr 'fzf-history; commandline -f repaint'
+    bind \ce 'fzf-vim-fasd; commandline -f repaint'
+    bind \cp 'fzf-vim-subtree; commandline -f repaint'
+    bind \cs 'fzf-cd-subtree; commandline -f repaint'
+    bind \cx 'fzf-cd-fasd; commandline -f repaint'
+
     # Mode-specific bindings
     switch $mode
         case normal
