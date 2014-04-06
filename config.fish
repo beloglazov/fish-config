@@ -33,6 +33,9 @@ function vi_mode_user -a mode
     end
 end
 
+# Disable the welcome text
+set fish_greeting ""
+
 # Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
 
