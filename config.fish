@@ -10,11 +10,12 @@ set fish_plugins vi-mode
 # Vi-mode key bindings
 function vi_mode_user -a mode
 
-    # Common bindings
+    # Base bindings
     bind \ck up-or-search
     bind \ch backward-char
     bind \cl forward-char
 
+    # fzf bindings
     bind \cr 'fzf-history; commandline -f repaint'
     bind \ce 'fzf-vim-fasd; commandline -f repaint'
     bind \cp 'fzf-vim-subtree; commandline -f repaint'
