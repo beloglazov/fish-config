@@ -1,4 +1,4 @@
 function gitd
-    git diff --stat $argv
+    git diff $argv
 end
 
