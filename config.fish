@@ -39,4 +39,8 @@ set fish_greeting ""
 # Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
 
+# Add fzf to PATH
 set PATH $PATH ~/.fzf
+
+# Addd extra PATH components
+. $HOME/.config/fish/path.fish
