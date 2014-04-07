@@ -9,8 +9,8 @@ mkdir -p ~/.config/fish
 mv -v ~/.config/fish/config.fish ~/.config/fish/config.old.fish 2> /dev/null
 mv -v ~/.config/fish/functions ~/.config/fish/functions.old 2> /dev/null
 
-ln -sf `pwd`/config.fish ~/.config/fish/config.fish
-ln -sf `pwd`/functions ~/.config/fish/functions
+ln -sfT `pwd`/config.fish ~/.config/fish/config.fish
+ln -sfT `pwd`/functions ~/.config/fish/functions
 
 fish_path=$(which fish)
 grep -q "^$fish_path$" /etc/shells || echo $fish_path | sudo tee -a /etc/shells
