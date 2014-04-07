@@ -1,4 +1,4 @@
-function gitco
+function gco
     git checkout $argv
 end
 

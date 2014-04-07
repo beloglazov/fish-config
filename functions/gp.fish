@@ -1,4 +1,4 @@
-function gitp
+function gp
     git push $argv
 end
 

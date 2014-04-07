@@ -1,4 +1,4 @@
-function gitc
+function gci
     git commit -m "$argv"
 end
 

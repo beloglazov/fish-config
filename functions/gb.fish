@@ -1,4 +1,4 @@
-function gitb
+function gb
     git branch $argv
 end
 
