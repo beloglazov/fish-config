@@ -12,5 +12,7 @@ mv -v ~/.config/fish/functions ~/.config/fish/functions.old 2> /dev/null
 ln -sf `pwd`/config.fish ~/.config/fish/config.fish
 ln -sf `pwd`/functions ~/.config/fish/functions
 
-chsh -s $(which fish)
-sudo chsh -s $(which fish)
+fish_path=$(which fish)
+grep -q "^$fish_path$" /etc/shells || echo $fish_path | sudo tee -a /etc/shells
+chsh -s $fish_path
+sudo chsh -s $fish_path
