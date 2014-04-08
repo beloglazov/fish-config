@@ -1,4 +1,4 @@
 function g
-    grep -i $argv
+    ag $argv
 end
 

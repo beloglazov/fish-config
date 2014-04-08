@@ -1,4 +1,4 @@
 function fd
-    find . -type d -iname "*$argv*" ^/dev/null | g $argv
+    find . -type d | g $argv
 end
 
