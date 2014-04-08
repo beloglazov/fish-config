@@ -11,7 +11,7 @@ set fish_plugins vi-mode
 function vi_mode_user -a mode
 
     bind \cu 'pushd ..; commandline -f repaint'
-    bind \cb 'popd >/dev/null; commandline -f repaint'
+    bind \cf 'popd >/dev/null; commandline -f repaint'
 
     # Base bindings
     bind \ck up-or-search
