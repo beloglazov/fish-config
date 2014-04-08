@@ -10,6 +10,9 @@ set fish_plugins vi-mode
 # Vi-mode key bindings
 function vi_mode_user -a mode
 
+    bind \cu 'pushd ..; commandline -f repaint'
+    bind \cb 'popd >/dev/null; commandline -f repaint'
+
     # Base bindings
     bind \ck up-or-search
     bind \ch backward-char
