@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone git://github.com/beloglazov/oh-my-fish.git ~/.oh-my-fish
+git clone https://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish
 
 cd $(dirname $BASH_SOURCE)
 
