@@ -1,3 +1,3 @@
 function yain
-    yaourt -S
+    yaourt -S $argv
 end

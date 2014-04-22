@@ -1,3 +1,3 @@
 function yarem
-    yaourt -Rns
+    yaourt -Rns $argv
 end

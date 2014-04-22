@@ -1,3 +1,3 @@
 function yaupg
-    yaourt -Syua
+    yaourt -Syua $argv
 end

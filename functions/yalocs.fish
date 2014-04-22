@@ -1,3 +1,3 @@
 function yalocs
-    yaourt -Qs
+    yaourt -Qs $argv
 end

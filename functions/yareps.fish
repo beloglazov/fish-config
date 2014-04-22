@@ -1,3 +1,3 @@
 function yareps
-    yaourt -Ss
+    yaourt -Ss $argv
 end
