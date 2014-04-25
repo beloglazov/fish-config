@@ -1,4 +1,4 @@
 function gs
-    git status $argv
+    git status -sb $argv
 end
 
