@@ -43,7 +43,7 @@ set fish_greeting ""
 . $fish_path/oh-my-fish.fish
 
 # Add fzf to PATH
-set PATH $PATH ~/.fzf
+set PATH ~/bin $PATH ~/.fzf
 
 # Addd extra PATH components
 . $HOME/.config/fish/path.fish
