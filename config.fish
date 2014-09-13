@@ -12,6 +12,8 @@ function vi_mode_user -a mode
 
     bind \cu 'pushd ..; commandline -f repaint'
     bind \cf 'popd >/dev/null; commandline -f repaint'
+    bind \cn 'cd -; commandline -f repaint'
+    bind \cb 'commandline -r ""; and commandline -f "execute" "history-search-backward"'
 
     # Base bindings
     bind \ck up-or-search
@@ -37,7 +39,7 @@ function vi_mode_user -a mode
 end
 
 # Disable the welcome text
-set fish_greeting ""
+set --erase fish_greeting
 
 # Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
