@@ -41,6 +41,9 @@ end
 # Disable the welcome text
 set --erase fish_greeting
 
+# Disable GREP_OPTIONS
+set --erase GREP_OPTIONS
+
 # Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
 
