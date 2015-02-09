@@ -5,7 +5,7 @@ set fish_path $HOME/.oh-my-fish
 set fish_theme beloglazov
 
 # Plugins
-set fish_plugins vi-mode
+set fish_plugins vi-mode pbcopy
 
 # Vi-mode key bindings
 function vi_mode_user -a mode
