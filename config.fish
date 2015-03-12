@@ -24,7 +24,7 @@ function vi_mode_user -a mode
     bind \cr 'fzf-history; commandline -f repaint'
     bind \cy 'fzf-vim-fasd; commandline -f repaint'
     bind \cp 'fzf-vim-subtree; commandline -f repaint'
-    bind \cs 'fzf-cd-subtree; commandline -f repaint'
+    bind \cs 'fzf-cd-subtree; commandline -f repaint; echo; l'
     bind \cx 'fzf-cd-fasd; commandline -f repaint; echo; l'
 
     # Mode-specific bindings
